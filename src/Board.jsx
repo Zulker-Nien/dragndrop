@@ -57,7 +57,6 @@ const projectStatus = {
 const Board = () => {
   const store = useContext(Store);
   const { modal, sendMail, dest, projectItem } = store;
-  const form = useRef();
   var templateParams = {
     message: `${projectItem} has been changed to state ${dest}`
 };
